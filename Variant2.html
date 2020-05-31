@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+	 <script src="jquery-3.4.1.min.js">
+	 </script>
+	 <script>
+	     $(document).ready(function() {
+		     $("#but1").click(function() {
+			     $("tr:odd").hide();
+				 });
+			 $("#but2").click(function() {
+			     $("tr:odd").show();
+				 });
+			 }); 
+	 </script>		 
+   </head>
+   <body>	
+  	 <button id="but1">Спрятать чётные строки</button>	
+	 <button id="but2">Показать чётные строки<br></button>	 
+     <p><table>
+  <tr>
+    <th>Month</th>
+    <th>Average Temperature</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td align="center">-4</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td align="center">-4</td>
+  </tr>
+  <tr>
+    <td>March</td>
+    <td align="center">0</td>
+  </tr>
+  <tr>
+    <td>April</td>
+    <td align="center">+7</td>
+  </tr>
+  <tr>
+    <td>May</td>
+    <td align="center">+13</td>
+  </tr>
+  <tr>
+    <td>June</td>
+    <td align="center">+16</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td align="center">+18</td>
+  </tr>
+  <tr>
+    <td>August</td>
+    <td align="center">+17</td>
+  </tr>
+  <tr>
+    <td>September</td>
+    <td align="center">+12</td>
+  </tr>
+  <tr>
+    <td>October</td>
+    <td align="center">+6</td>
+  </tr>
+  <tr>
+    <td>November</td>
+    <td align="center">0</td>
+  </tr>
+  <tr>
+    <td>December</td>
+    <td align="center">-3</td>
+  </tr>
+</table></p> 
+   </body>
+</html>
